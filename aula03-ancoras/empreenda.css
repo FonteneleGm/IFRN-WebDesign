@@ -1,0 +1,27 @@
+body{
+    background-color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+li{
+    list-style-type: square;
+    /*A marcação pode ser interna*/
+    list-style-position: inside;
+    list-style-image: url(next.png);
+}
+a{
+    color: white;
+}
+a:visited{ /*Tem de ser acima do hover*/
+    color: gray;
+}
+a:active{
+    color: aquamarine;
+}
+a:hover{ /*Efeito de passar o rato*/
+    background-color: aliceblue;
+    color: rgb(7, 2, 79);
+}
+a:link{
+    text-decoration: none;
+}
