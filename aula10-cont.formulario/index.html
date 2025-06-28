@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>SÃO PEDRO - IFRN CNAT</title>
+</head>
+<body>
+    <header>
+        <h1>SÃO PEDRO DO IFRN CAMPUS NATAL CENTRAL</h1>
+    </header>
+    <main>
+        <h2>INSCRIÇÃO PARA O EVENTO</h2>
+        <form action="enviar.html">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email"><br>
+
+            <label for="cidade">Cidade: </label>
+            <input type="text" id="cidade" list="cidades">
+            <datalist id=cidades>
+                <option value="Natal"></option>
+                <option value="Parnamirim"></option>
+                <option value="Rio de Janeiro"></option>
+            </datalist> <br> 
+            
+            <label for="curso" id="curso"></label>
+            <!-- combobox -->
+            <!-- ATRIBUTO size permite aberto -->
+            <!-- comando "mutiple" permite selecionar vários com 'control' -->
+            <select name="curso" id="curso">
+                <option value="tads">TADS</option>
+                <option value="gestao">Gestão Pública</option>
+                <option value="redes">Redes de Computadores</option>
+            </select> <br>
+
+
+
+            <input type="submit" value="Enviar">
+        </form>
+
+
+
+        <h2>ENQUETE</h2>
+        
+        <form action="enviar.html">
+            <p>Sobre as músicas</p>
+            <!-- radio para seleção única e aberta -->
+            <label><input type="radio" name="musicas" value="tudo"> Tocar de tudo</label><br>
+            <label><input type="radio" name="musicas" value="soforro"> Só forró</label><br>
+            <label><input type="radio" name="musicas" value="dj"> DJ</label><br>
+
+            <p>Sobre as comidas</p>
+            <!-- radio para seleção única e aberta -->
+            <label><input type="radio" name="comidas" value="tudo"> Tudo</label><br>
+            <label><input type="radio" name="comidas" value="tipicas"> Só típicas</label><br>
+            <label><input type="radio" name="comidas" value="sem"> Sem comida</label><br>
+            <input type="submit" value="Votar">
+        
+
+
+
+        <form action="enviar.html"></form>
+            <h2>Contato</h2>
+            <label for="mensagem">Mensagem: </label>
+            <!-- Textarea: texto que tenha enter -->
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="500"></textarea>
+            <input type="submit" value="Enviar">
+        
+        <a href="https://search.brave.com" target="_blank">Brave Search</a>
+        
+        <form action="enviar.html">
+            <h2>Comidas prefiridas</h2>
+            <label><input type="checkbox" name="comida" value="pamonha"> Pamonha</label><br>
+            <label><input type="checkbox" name="comida" value="canjica"> Canjica</label><br>
+            <label><input type="checkbox" name="comida" value="mungunza"> Mungunzá</label><br>
+            <label><input type="checkbox" name="comida" value="arrozdoce" disabled> Arroz doce</label><br>
+            <label><input type="checkbox" name="comida" value="milho" checked> Milho</label><br>
+            <input type="submit" value="Enviar">    
+    </main>
+    <footer>
+        <p>Desenvolvido por IFRN CNAT</p>
+    </footer>
+</body>
+</html>
