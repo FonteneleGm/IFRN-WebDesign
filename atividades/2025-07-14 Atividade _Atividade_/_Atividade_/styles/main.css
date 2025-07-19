@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1{
+    color: black;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 108vh;
+    padding: 1em 2em;
+    background-color: #487979;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 2em;
+    margin-top: 2em;
+    /* flex-direction: column; */
+}
+header nav ol li{
+    list-style-type: none;
+}
+header nav ol li a{
+    text-decoration: none;
+    color: white;
+}
+/* header nav ol li a:link{
+    color: white;
+} */
+body{
+    display: flex;
+    height: 100vh;
+}
+body main div#user{
+    display: flex;
+    justify-content: flex-end;
+}
+/* form{
+    display: flex;
+    flex-basis: 96%;
+} */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+section h2{
+    flex-basis: 96%;
+}
+section h3{
+    background-color: #eee;
+    text-align: center;
+    padding: 2em 2em;
+    height: 10em;
+}
+section div{
+    flex-basis: 17%; /* como eu quero 5 cards dentro do container, tenho de colocar um valor um pouquinho menos do que eu colocaria (25%)  */
+    border: 0.5px solid black;
+    /* border-radius: 7px; */
+    /* box-shadow: 0 0 10px #ddd; */
+}
+section div figure{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+section div figure img{
+    height: 1.5rem;
+    width: auto;
+}
