@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN-ITEMS CENTRO-CENTRO</title>
+    <style>
+        *{
+            margin: 0; /*  */
+            padding: 0;
+        }
+        body{
+            display: flex;
+            height: 100vh; /* unidade: height viewport */
+            justify-content: center;
+            align-items: center; /*  */
+        }
+        section{
+            border: 1px solid black;
+            width: 30rem; /* Não pode ser max por causa do display flex */
+            height: 20rem;
+            display: flex;
+            align-items: flex-end; /*  */
+            gap: 2em;
+            /* background-color: deeppink; */
+        }
+        p{
+            background-color: aqua;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <section> <!-- Para conseguir analisar o valor flex end, necessito colocar mais linhas dentro dos itens/cards -->
+        <p>texto a <br>texto texto </p>
+        <p>texto b <br>texto texto <br>texto texto</p>
+        <p>texto c</p>
+        <p>texto d <br>texto texto <br>texto texto <br>texto texto</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÉLULAS MESCLADAS</title>
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+        }
+        div{
+            background-color: coral;
+        }
+        div.mesclada{
+            background-color: pink;
+            flex-basis: 100%; /* Configuração usada para dispensar os "childs" das tag "parent", Só funciona com flex-wrap */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div class="mesclada">CELULA OCUPANDO 100%</div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div class="mesclada">CELULA OCUPANDO 100%</div>
+        <div><p>CÉLULA</p></div>
+
+    </section>
+</body>
+</html>
