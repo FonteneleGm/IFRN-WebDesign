@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+body{
+    padding: 10px;
+}
+nav  > ol >  li{
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+nav ol li p, nav ol li a{
+    background-color: rgb(95, 158, 160);
+    color: white;
+    text-decoration: underline;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+ol{
+    list-style-type: none;
+}
+li.submenu-items{
+    visibility: hidden;
+} 
+.submenu-items p{
+    visibility: visible;
+}
+.submenu-items ol{
+    position: absolute;
+    padding-top: 0.5rem;
+}
+.submenu-items ol li a{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.submenu-items:hover{
+    visibility: visible;
+}

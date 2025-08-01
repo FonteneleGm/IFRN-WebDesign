@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div#container{
+    max-width: 80rem;
+    margin: 1rem auto;
+    background-color: #dedede;
+}
+header{
+    padding: 4rem;
+    background-image: url(imgs/imagem.png);
+    /* background-size: 20% / 150%; */
+    background-size: cover;
+    /* Esse background-size: cover é similar ao "width: 100%". */
+    background-position: center;
+    background-attachment: fixed;
+    /* Serve para quando usar barra de rolagem, a imagem não rola junto. */
+    margin-bottom: 2rem;
+}
+main{
+    display: flex; /* Para ficar entre 4 colunas */
+    flex-wrap: wrap; /* Para quando as janelas diminuam as janelas "quebrem" */
+    justify-content: center; /* Caso o layout seja fluido (layout contrário de layout com largura), posso centralizar as colunas, posso... */
+}
+img{
+    width: 100%;
+}
+main section{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    flex-basis: 18%;
+}
+
+@media screen and (max-width:680px) /* Se a largura for menor que 479, faça isso. */{
+    main section{
+        /* background-color: aqua; */
+        flex-basis: 90%;
+    }
+    header{
+        visibility: hidden;
+        /* Existem dois atribuitos que existem para esconder o elemento,
+        "visibility: hidden" esconde o elemento ainda ocupando o seu espaço.
+        display: none, parece que o elemento sumiu (igual a teté) do html (não ocupa o espaço). */
+        /* display: none; */
+    }
+}
+
+@media screen and (max-width:1024px){
+    main{
+        background-color: deeppink;
+    }
+    main section{
+        flex-basis: 40%;
+    }
+}

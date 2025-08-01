@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA DO AMIGO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div#container{
+            margin: 1em auto;
+            max-width: 50rem;
+        }
+        header, main, footer{
+            border: 1px solid gray;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        div.modal{
+            background-color: darkgreen;
+            color: white;
+            padding: 2rem;
+            width: 20rem; /* É interessante entender que quando aplicamos o position: absolute, o elemento deixar de ser "block" e passa a ser "inline-block". */
+            height: 20rem; /* */
+            box-shadow: 0 0 0.1rem 0.1rem gray;
+            border-radius: 0.3rem; /* Deixa as bordas arredondadas. */
+            position: absolute; /* O próposito é permitir um elemento ficar encima do outro. (Tem atributos top, bottom, left e right, só pode usar 2 ao mesmo tempo */
+            top: 0;
+            left: 0;
+            /* bottom: ;
+            right: ; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <!-- É uma caixa que aparece sobre o site com um efeito esmaecido -->
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam porro dolore veniam sequi cupiditate velit autem alias eveniet mollitia sapiente dicta ut, reiciendis neque eos, libero pariatur, nesciunt sed.</p>
+        </div>
+        <header>
+            <h1>DIA DO AMIGO</h1>
+            <a href="position-absolute-relative.html">"position-absolute-relative.html"</a>
+        </header>
+        <main>
+            <!-- p*5>lorem -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, vitae nisi? Temporibus neque suscipit sit ratione quibusdam qui dolorem non quo libero ea debitis ipsum, nam laudantium, exercitationem dignissimos placeat.</p>
+            <p>Unde illo, ad neque impedit sunt aspernatur ipsa quam non similique consectetur quibusdam doloribus quos facilis accusantium aliquam asperiores quae quaerat in itaque et ut suscipit dolor totam eligendi! Quis.</p>
+            <p>Odio quam explicabo ad modi dolore eligendi, voluptatum pariatur quod nobis dicta saepe voluptatem aliquam repellendus tempore soluta, iusto rem nostrum odit quo iure fuga animi? Minima ut cupiditate aliquid.</p>
+            <p>Animi dolores qui, fugit incidunt dolorum rem est quaerat iste doloribus tempore, cupiditate id illo velit earum fugiat adipisci, consequuntur minima praesentium perspiciatis! Ipsa ad iure, repellendus aut nisi dolore.</p>
+            <p>Mollitia optio commodi ad necessitatibus, repellat atque enim natus modi tempore. Asperiores quibusdam facere amet cum expedita nemo ipsum. Quibusdam accusantium id possimus. Ratione deserunt enim quibusdam quo voluptate rem!</p>
+        </main>
+        <footer>
+            <p>Desenvolvido por IFRN.</p>
+        </footer>
+    </div>
+</body>
+</html>
